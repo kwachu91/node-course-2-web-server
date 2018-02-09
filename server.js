@@ -51,6 +51,10 @@ app.get('/bad', (req, res) => {
   res.send("Unable to fetch data!");
 });
 
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs');
+});
+
 app.listen(port, () => {
   console.log(`Server is start on port ${port}!`);
 });
